@@ -38,6 +38,25 @@ Every AI agent action passes through a comprehensive security pipeline:
 - `/dashboard`: Real-time governance monitoring UI
 - `/mandates`: Agent DNA (TOML configurations)
 
+## ⚙️ Configuration
+
+### Environment Variables
+
+AEON can be configured via environment variables. Copy `.env.example` to `.env` and customize:
+
+```bash
+cp .env.example .env
+```
+
+**Key Configuration Options**:
+- `GEMMA_RISK_SERVER_URL` - Gemma risk scoring endpoint (default: `http://127.0.0.1:8001/score_risk`)
+- `TODOIST_API_TOKEN` - Optional Todoist MCP integration
+- `AEON_WASM_PATH` - Custom WASM module path
+
+See [`.env.example`](.env.example) for full documentation.
+
+---
+
 ## 🛠️ Quick Start
 
 ### Option 1: Heuristics-Only (Fast)
@@ -80,6 +99,33 @@ Track in real-time via dashboard:
 - Policy violations
 - Resource usage
 - Audit logs
+
+## 🔒 Security
+
+AEON is built with security-first principles:
+- **Zero-Trust Architecture** - Every action validated
+- **WASM Isolation** - Perfect security boundaries
+- **Hybrid Risk Scoring** - AI + heuristics threat detection
+- **Cryptographic Identity** - Ed25519 signing
+- **Complete Audit Trail** - Telemetry and compliance logging
+
+See [SECURITY.md](SECURITY.md) for vulnerability reporting and best practices.
+
+## 📦 Model Weights
+
+The Gemma 3 270M governance adapter is included in this repository. On first run:
+
+```bash
+cd governance_model
+python3 risk_server.py
+# Model will load from ./adapter directory
+```
+
+**Note**: Model weights are managed via Git LFS. If you encounter issues, ensure Git LFS is installed:
+```bash
+git lfs install
+git lfs pull
+```
 
 ---
 

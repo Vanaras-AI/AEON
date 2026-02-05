@@ -56,7 +56,11 @@ impl RiskScorer {
             params: params.clone(),
         };
 
-        let response: RiskResponse = ureq::post("http://127.0.0.1:8001/score_risk")
+        // Allow configuration via environment variable
+        let gemma_url = std::env::var("GEMMA_RISK_SERVER_URL")
+            .unwrap_or_else(|_| "http://127.0.0.1:8001/score_risk".to_string());
+
+        let response: RiskResponse = ureq::post(&gemma_url)
             .timeout(std::time::Duration::from_secs(5))
             .send_json(serde_json::to_value(&req).map_err(|e| e.to_string())?)
             .map_err(|e| format!("HTTP error: {}", e))?

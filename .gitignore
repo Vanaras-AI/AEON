@@ -23,3 +23,18 @@ dist/
 # Model weights (add to git-lfs)
 *.safetensors
 *.bin
+*.gguf
+
+# AEON Runtime
+.aeon/
+
+# Additional credential patterns
+*.pem
+*.crt
+*.p12
+.env.local
+.env.*.local
+
+# Logs & Telemetry
+logs/
+telemetry/

@@ -1,0 +1,12 @@
+# Git LFS tracking for model weights
+# Install Git LFS: https://git-lfs.github.com/
+# Run: git lfs install && git lfs pull
+
+# Gemma adapter weights
+governance_model/adapter/*.safetensors filter=lfs diff=lfs merge=lfs -text
+governance_model/adapter/*.bin filter=lfs diff=lfs merge=lfs -text
+governance_model/adapter/*/*.safetensors filter=lfs diff=lfs merge=lfs -text
+governance_model/adapter/*/*.bin filter=lfs diff=lfs merge=lfs -text
+
+# Additional model formats
+*.gguf filter=lfs diff=lfs merge=lfs -text
