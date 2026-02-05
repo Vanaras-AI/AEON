@@ -1,0 +1,17 @@
+agent_id = "js_worker_cell"
+version = "1.0.0"
+did = "did:aeon:js_worker_cell:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_WRITE", "LOG"]
+subscriptions = []
+territory = []
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.372112+05:30)
+# Signature: 7c48250cf38482ca2a81f93f6eb2ea118017cb318e80b65ea182b69d24af7239a49c472e1d37d3f02fbb765f6e750ab82c25d5f4025bff98fabd7eab6cfe6502
+# Algorithm: ed25519
+# ==========================================

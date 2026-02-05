@@ -1,0 +1,18 @@
+agent_id = "test_crypto_sign"
+version = "1.0.0"
+did = "did:aeon:test_crypto_sign:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["LOG"]
+subscriptions = []
+territory = []
+
+[blueprint]
+purpose = "Test ed25519 signature verification - Sprint 2"
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.455029+05:30)
+# Signature: d2978a0d0f37262125c98f34e6f8e3e92b63a25789b6cb1b6950e3296b200397ea9629fcafafe30bc0a45f04a1ac7c0236ada5c34cf2cb044938a0abd2a12303
+# Algorithm: ed25519
+# ==========================================

@@ -1,0 +1,17 @@
+agent_id = "agent_log_only"
+version = "1.0.0"
+did = "did:aeon:agent_log_only:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["LOG"]
+subscriptions = []
+territory = []
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.314568+05:30)
+# Signature: cee12cb3c5cda6c25705273f7cf42170af4819777aad8ec285118ed1a9ff07d3f5b1501eb3ca1c3d75eb25453971852984045105170d1623794e4e3e19ecdc08
+# Algorithm: ed25519
+# ==========================================

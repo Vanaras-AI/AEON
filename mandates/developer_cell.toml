@@ -1,0 +1,18 @@
+agent_id = "developer_cell"
+version = "1.0.0"
+did = "did:aeon:developer_cell:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_WRITE", "LOG"]
+subscriptions = []
+territory = []
+
+[blueprint]
+"health.js" = "app.get('/health', (req, res) => { res.json({ status: 'UP' }); });"
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.363224+05:30)
+# Signature: 0289491adfbe0876d17f3d6101bbbd50ff39583975a3a8a89da95854e9c4df93b8c15f9dfc3c0d0f11fd35610bce2a4aa05631b769e925eada225d4e1e8e2808
+# Algorithm: ed25519
+# ==========================================

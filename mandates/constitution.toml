@@ -1,0 +1,25 @@
+# The AEON Constitution 📜 (V1 Iron Dome Edition)
+# This file is actively enforced by the Rust Proxy.
+
+[meta]
+version = "1.0.0"
+authority = "Local Root"
+
+[network]
+# Domains the agent is allowed to access
+allow = [
+    "google.com"
+]
+
+# Domains explicitly blocked (Everything else is blocked by default if strict_mode is on)
+block = [
+    "evil.com",
+    "facebook.com"
+]
+
+[filesystem]
+# Paths allowed for write access
+write_allow = [
+    "./workspace",
+    "./logs"
+]

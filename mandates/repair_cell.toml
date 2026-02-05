@@ -1,0 +1,17 @@
+agent_id = "repair_cell"
+version = "1.0.0"
+did = "did:aeon:repair_cell:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_READ", "FS_WRITE", "LOG"]
+subscriptions = []
+territory = []
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.421859+05:30)
+# Signature: 99c5ca751e55039029a4b5b2c8905847a21dfc819286bd697cc4fecf5157f62ca0b67c6eb528b833bced6c22f25cf10bfd99bb1100405bf80981129b77d21a08
+# Algorithm: ed25519
+# ==========================================

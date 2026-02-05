@@ -1,0 +1,17 @@
+agent_id = "architect_cell"
+version = "1.0.0"
+did = "did:aeon:architect_cell:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_READ", "FS_WRITE", "LOG", "LLM_ACCESS"]
+subscriptions = []
+territory = ["../projects/todo_app/server.js"]
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.322810+05:30)
+# Signature: 0fe1d0284f5339837310d370a3d1feb62b30147ecbc24b457c8bbd30deaee12c68033307e7bd3549734a64d07a71779c35572ac13948ea8e3a24944f9ea08808
+# Algorithm: ed25519
+# ==========================================

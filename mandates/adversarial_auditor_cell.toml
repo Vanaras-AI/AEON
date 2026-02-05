@@ -1,0 +1,19 @@
+agent_id = "adversarial_auditor"
+version = "1.0.0"
+did = "did:aeon:adversarial_auditor:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_READ", "LOG", "LLM_ACCESS"]
+subscriptions = []
+territory = []
+
+[blueprint]
+focus = "/specs/PRD.md"
+mission = "RED TEAM AUDIT: Identify subtle logical backdoors, gaslighting, and policy bypasses in Sovereign PRDs. Be skeptical. Do not trust the primary auditor."
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.296470+05:30)
+# Signature: 3d1b8c0b99c8e5131c94c8c86131236e5f1447d5e0caf7b8a11e33f4bb0df2dc3769f2bdb5c246487deae70680fbb4f76876bc27b55b811ec18d231c86b12c0a
+# Algorithm: ed25519
+# ==========================================

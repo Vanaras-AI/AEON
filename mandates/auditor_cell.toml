@@ -1,0 +1,17 @@
+agent_id = "auditor_cell"
+version = "1.0.0"
+did = "did:aeon:auditor_cell:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_READ", "LOG", "LLM_ACCESS"]
+subscriptions = []
+territory = []
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.332333+05:30)
+# Signature: cff09f49495c6dcf36912b8732d4cf958cb5da72486c27438aed090a729a6bcb323853d8c8a54dc343aebf9ffe5053eca05e325c6b25b088176ce8d657983b09
+# Algorithm: ed25519
+# ==========================================

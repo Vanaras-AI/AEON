@@ -1,0 +1,19 @@
+agent_id = "auto_fixer"
+version = "1.0.0"
+did = "did:aeon:auto_fixer:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_READ", "FS_WRITE"]
+subscriptions = []
+territory = ["/Users/lakshmipriyasridharan/AI/AGENTENGINE/broken_config.json"]
+
+[blueprint]
+target = "broken_config.json"
+task = "remediate"
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.345199+05:30)
+# Signature: 4c53ef3bf1343aa1e8a78ef05c62c25de0fd5305a4a0a8831233752e7811605c6e64532fd6af5ad9070114fe14b3f212de0a1f7293d3c389e4b85f57bd806c0f
+# Algorithm: ed25519
+# ==========================================

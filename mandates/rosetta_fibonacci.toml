@@ -1,0 +1,17 @@
+agent_id = "universal_validator"
+version = "1.0.0"
+did = "did:aeon:universal_validator:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_WRITE", "LOG"]
+subscriptions = []
+territory = []
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.444354+05:30)
+# Signature: efb2928993e507083f603f314d92d1d812b00fed102f4982dd2d2ad7c743582b749a5a530d62c79f225a17536540d642600586e7f192e4bb412f20fc7c74b609
+# Algorithm: ed25519
+# ==========================================

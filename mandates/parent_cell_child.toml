@@ -1,0 +1,5 @@
+agent_id = "parent_cell_child"
+version = "1.0.0"
+did = "did:aeon:parent_cell_child:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["LOG"]
+subscriptions = []

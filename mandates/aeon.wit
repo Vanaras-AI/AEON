@@ -1,0 +1,39 @@
+package aeon:core;
+
+/// The Governance Oracle Interface
+/// This is the "Conscience" that the Agent must consult.
+interface governance {
+    
+    variant risk-level {
+        safe,
+        warning,
+        critical,
+        blocked
+    }
+
+    record assessment {
+        level: risk-level,
+        reason: string,
+        /// Usage cost in 'compute credits' (for marketplace billing)
+        cost: u32,
+    }
+
+    /// Ask the Governance Oracle if an action is allowed.
+    /// The 'input' is usually a JSON string of the tool call.
+    assess: func(action: string, metadata: string) -> assessment;
+}
+
+/// The Agent Interface
+/// This is what every "Rented Agent" (Python/TS) must implement.
+interface agent {
+    /// The main entry point.
+    run: func(objective: string) -> string;
+    
+    /// Basic health check
+    ping: func() -> bool;
+}
+
+world aeon-protocol {
+    import governance;
+    export agent;
+}

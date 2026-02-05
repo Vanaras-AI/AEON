@@ -1,0 +1,19 @@
+package aeon:core;
+
+interface ran-agent {
+    /// The Universal Entry Point for all Rented Agents.
+    /// 
+    /// # Arguments
+    /// * `intent`: The user's goal (e.g., "Find cheap flights to mars").
+    /// 
+    /// # Returns
+    /// * `result`: The agent's structured JSON response or an error string.
+    /// 
+    /// # Safety
+    /// This function is sandboxed. Network access must be requested via Host Functions.
+    run: func(intent: string) -> result<string, string>;
+}
+
+world agent-v1 {
+    export ran-agent;
+}

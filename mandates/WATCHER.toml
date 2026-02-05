@@ -1,0 +1,17 @@
+agent_id = "WATCHER"
+version = "1.0.0"
+did = "did:aeon:WATCHER:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["LOG", "FS_READ"]
+subscriptions = []
+territory = []
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.286629+05:30)
+# Signature: 3ebb0d05097f997da839c096d0629ea02d83cc56140e9dd06f4892935d8ba112f92d6f45f9e96b301e789c828a2b19c208acf777d0f81b60c34eb5141a780c00
+# Algorithm: ed25519
+# ==========================================

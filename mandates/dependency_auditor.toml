@@ -1,0 +1,20 @@
+agent_id = "dependency_auditor"
+version = "1.0.0"
+did = "did:aeon:dependency_auditor:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_READ"]
+subscriptions = []
+territory = ["/Users/lakshmipriyasridharan/AI/AGENTENGINE/core/Cargo.toml"]
+
+[blueprint]
+policy = "no_wildcards"
+task = "audit_compliance"
+target = "serde"
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.354815+05:30)
+# Signature: a86049602265c8e188b1c556137a8416832e2b983bbac291f4d8bc3a7841a68fbc635d7e3637c379042962ea483e930add89bd60c69e0103498bb525efc23905
+# Algorithm: ed25519
+# ==========================================

@@ -1,0 +1,17 @@
+agent_id = "parent_cell"
+version = "1.0.0"
+did = "did:aeon:parent_cell:1.0.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["MITOSIS", "LOG"]
+subscriptions = []
+territory = []
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.395827+05:30)
+# Signature: 46180f3b2d54ccc7fa2d2ae23c41e8d02f93c0bf295be2360f0c46d8b58d6283fb154c6d34911cc44dbe77d0370a07638fa95590871c203e3281228eaacd050c
+# Algorithm: ed25519
+# ==========================================

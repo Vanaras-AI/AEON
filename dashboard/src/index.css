@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+    --color-bg-primary: #000000;
+    --color-bg-secondary: #050505;
+    --color-bg-panel: #0a0a0a;
+    --color-border: #333333;
+
+    /* Palantir-style Accents: Sharp, specific, professional */
+    --color-accent-primary: #ffffff;
+    /* Stark White for primary data */
+    --color-accent-highlight: #00ff41;
+    /* Kept for status (Success) */
+    --color-accent-warn: #ff3333;
+    /* Critical Alert */
+
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a0a0a0;
+    --color-text-muted: #666666;
+
+    /* Fonts */
+    --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    overflow: hidden;
+    height: 100vh;
+    letter-spacing: -0.01em;
+    /* Tighter enterprise tracking */
+}
+
+/* Sharp Panels (No soft blurs, sharp borders) */
+.panel-glass {
+    background: rgba(10, 10, 10, 0.95);
+    border: 1px solid var(--color-border);
+    box-shadow: none;
+    /* Flat design */
+}
+
+/* Custom Scrollbar - Slim & Hidden-ish */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 0px;
+    /* Sharp corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-secondary);
+}
+
+/* React Flow Overrides */
+.react-flow__edge-path {
+    stroke-width: 1;
+    /* Thinner schematic lines */
+    stroke: #444;
+    /* Subtle connectivity */
+}
+
+.react-flow__node {
+    border-radius: 0 !important;
+    /* Sharp nodes */
+}
+
+.react-flow__controls {
+    border-radius: 0;
+    background: #000;
+    border: 1px solid #333;
+    fill: #fff;
+}
+
+.react-flow__controls-button {
+    background: #000;
+    border-bottom: 1px solid #333;
+    border-radius: 0;
+}
+
+.react-flow__controls-button:hover {
+    background: #111;
+}

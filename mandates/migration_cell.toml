@@ -1,0 +1,17 @@
+agent_id = "migration_cell"
+version = "1.1.0"
+did = "did:aeon:migration_cell:1.1.0:779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205"
+permissions = ["FS_READ", "FS_WRITE", "LOG"]
+subscriptions = []
+territory = ["../projects/todo_app/persistence.db", "../projects/todo_app/shadow_todos.json"]
+
+[blueprint]
+
+# ==========================================
+# 🔐 GOVERNANCE ORACLE SIGNATURE
+# Signed-By: Sovereign (AEON Keyring)
+# Public-Key: 779087511d60d7f0890c6678c034e3024505701cae013aab7633691ecb4d4205
+# Timestamp: 1769796442 (2026-01-30T23:37:22.382816+05:30)
+# Signature: 66997bc263f218be25fe0d2a58bb45654f6cbc4627d808d5a8f103dac0644ca1c333d63470630e92804a2488192b5d1bcf2d1dbde2aaf222eced0b0822e4ce0c
+# Algorithm: ed25519
+# ==========================================
