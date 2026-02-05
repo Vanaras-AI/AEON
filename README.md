@@ -92,6 +92,28 @@ cd dashboard && npm install && npm run dev
 - **Enterprise AI**: Governed AI agents for regulated industries
 - **Security Research**: Test and validate AI agent behaviors
 
+## 🔗 A2G Protocol
+
+AEON implements the **A2G (Agent-to-Governance) Protocol**, a standardized interface for AI agent governance:
+
+### Message Types
+| Direction | Message | Purpose |
+|-----------|---------|---------|
+| Agent → Gov | `A2G_INTENT` | Request permission to execute tool |
+| Agent → Gov | `A2G_REPORT` | Report execution outcome |
+| Gov → Agent | `G2A_VERDICT` | Approve/deny with risk assessment |
+| Gov → Agent | `G2A_POLICY` | Send capability manifest |
+
+### Governance Flow
+```
+Agent: A2G_INTENT(tool, args)
+  → Governance: Policy Check → Risk Scoring → Capability Manifest
+    → G2A_VERDICT(APPROVED/DENIED)
+      → Agent: Execute in WASM → A2G_REPORT(result)
+```
+
+See full specification: [docs/A2G_PROTOCOL.md](docs/A2G_PROTOCOL.md)
+
 ## 📊 Governance Metrics
 
 Track in real-time via dashboard:

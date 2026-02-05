@@ -38,7 +38,7 @@ impl RiskScorer {
                 // - High precision (heuristics know safe patterns)
                 let final_score = gemma_score.max(heuristic_score);
                 
-                println!("🧠 [GEMMA] Model: {:.2f}, Heuristic: {:.2f}, Final: {:.2f}", 
+                println!("🧠 [GEMMA] Model: {:.2}, Heuristic: {:.2}, Final: {:.2}", 
                          gemma_score, heuristic_score, final_score);
                 
                 final_score

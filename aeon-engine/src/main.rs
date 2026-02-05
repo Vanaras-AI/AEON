@@ -18,6 +18,7 @@ use serde_json::Value; // Added serde_json for policy check
 mod synapse;
 mod server;
 mod risk_scorer;
+pub mod a2g; // A2G Protocol - Agent-to-Governance
 
 use crate::synapse::{Signal, Command as AeonCommand};
 use crate::risk_scorer::RiskScorer;
